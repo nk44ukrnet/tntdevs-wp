@@ -297,17 +297,113 @@ a:visited:not([class]) {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
   transform: translateY(var(--hb-translateY));
 }
+.hb-cta_v1 {
+  border: 2px solid var(--hb-color2);
+  line-height: 100%;
+  border-radius: 0;
+}
 .hb-pagination a {
   color: var(--hb-color1);
 }
+body.home .hb-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 .hb-header {
   padding-block: 15px;
+}
+@media (max-width: 900px) {
+  .hb-header__logo svg {
+    width: 149px;
+    height: 41px;
+  }
 }
 .hb-header__holder {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 7px;
+}
+.hb-header__holder #header-menu-1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  position: relative;
+}
+.hb-header__holder #header-menu-1 .sub-menu {
+  transition: var(--transition);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 7px;
+  min-width: 200px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-15px);
+}
+.hb-header__holder #header-menu-1 li.menu-item-has-children {
+  position: relative;
+}
+.hb-header__holder #header-menu-1 li.menu-item-has-children:hover > .sub-menu {
+  pointer-events: auto;
+  opacity: 1;
+  transform: translateY(0);
+}
+.hb-header__holder #header-menu-1 li.menu-item-has-children::after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  display: block;
+  top: 40%;
+  transform: translateY(-50%) rotate(-45deg);
+  right: -12px;
+  border-bottom: 1px solid var(--hb-color1);
+  border-left: 1px solid var(--hb-color1);
+}
+.hb-header__holder #header-menu-1 a {
+  text-decoration: none;
+  font-weight: 500;
+}
+.hb-header__holder #header-menu-1 a:hover {
+  text-decoration: underline;
+}
+.hb-header__holder ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.hb-header__nav-trigger {
+  background-color: var(--hb-color1);
+  color: var(--hb-color-light);
+  line-height: 100%;
+  border: none;
+  padding: 2px 5px;
+  order: 99;
+}
+@media (min-width: 900px) {
+}
+.hb-header .hb-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--hb-color1);
+  font-weight: 500;
+  padding: 10px 20px 10px 12px;
+}
+.hb-header .hb-cta:hover {
+  background-color: var(--hb-color1);
+  color: var(--hb-color-light);
+  border-color: var(--hb-color1);
+}
+.hb-header .hb-cta span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 .hb-single-main {
   padding-block: 40px;

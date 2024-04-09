@@ -1,11 +1,120 @@
+body.home .hb-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 .hb-header {
   padding-block: 15px;
+
+  &__logo {
+    @media (max-width: @header-breakpoint) {
+      svg {
+        width: 149px;
+        height: 41px;
+      }
+    }
+  }
 
   &__holder {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap: 7px;
+
+    #header-menu-1 {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      position: relative;
+
+      .sub-menu {
+        //display: none;
+        transition: var(--transition);
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        padding: 7px;
+        min-width: 200px;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-15px);
+      }
+
+      li.menu-item-has-children {
+        position: relative;
+
+        &:hover > .sub-menu {
+          pointer-events: auto;
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+        &::after {
+          content: '';
+          width: 5px;
+          height: 5px;
+          position: absolute;
+          display: block;
+          top: 40%;
+          transform: translateY(-50%) rotate(-45deg);
+          right: -12px;
+          border-bottom: 1px solid var(--hb-color1);
+          border-left: 1px solid var(--hb-color1);
+        }
+      }
+
+      a {
+        text-decoration: none;
+        font-weight: 500;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  &__nav-trigger {
+    @media (min-width: @header-breakpoint) {
+      //display: none;
+    }
+    background-color: var(--hb-color1);
+    color: var(--hb-color-light);
+    line-height: 100%;
+    border: none;
+    padding: 2px 5px;
+    order: 99;
+  }
+
+  .hb-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--hb-color1);
+    font-weight: 500;
+    padding: 10px 20px 10px 12px;
+
+    &:hover {
+      background-color: var(--hb-color1);
+      color: var(--hb-color-light);
+      border-color: var(--hb-color1);
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
   }
 
 }
