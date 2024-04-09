@@ -1,0 +1,26 @@
+:root {
+  --hb-color-light: #fff;
+  --hb-color-dark: #0a0404;
+  --hb-color1: hsl(34, 98%, 52%);
+  --hb-color2: hsl(0, 0%, 70%);
+  --hb-color3: hsl(60, 1%, 19%);
+  --lh: 150%;
+  --hb-font1: "Poppins", sans-serif;
+  --hb-font2: "Roboto", sans-serif;
+  --transition: all 0.25s linear;
+  --shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  --shadow1: 0px 0px 7px rgba(255, 255, 255, 0.3);
+  --hb-gap-lg: 100px;
+  --hb-gap-md: 50px;
+  --hb-gap-sm: 20px;
+  --hb-gap-xsm: 10px;
+  --hb-translateY: 2px;
+}
+@media (max-width: 768px) {
+  :root {
+    --hb-gap-lg: 50px;
+    --hb-gap-md: 30px;
+    --hb-gap-sm: 15px;
+  }
+}
+/*# sourceMappingURL=_variables.css.map */

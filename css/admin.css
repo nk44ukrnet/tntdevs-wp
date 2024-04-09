@@ -1,0 +1,5 @@
+.acf-flexible-content .layout:nth-child(even),
+.acf-flexible-content .layout:nth-child(even) .acf-fields {
+  background-color: rgba(128, 0, 128, 0.03);
+}
+/*# sourceMappingURL=admin.css.map */

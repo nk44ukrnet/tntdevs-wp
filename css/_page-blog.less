@@ -1,0 +1,84 @@
+.hb-blog-loop {
+
+  padding-block: 30px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+
+  &__holder {
+    margin-block: 30px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(min-content, 370px));
+
+    @media (max-width: 1201px) {
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    padding: 20px;
+    border: 1px solid var(--hb-color-light);
+    border-radius: 8px;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    &:hover {
+      border-color: var(--hb-color1);
+    }
+  }
+
+  &__featured {
+    img {
+      width: 100%;
+      display: block;
+      height: auto;
+      min-height: 250px;
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    color: var(--hb-color1);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--hb-font2);
+    transition: var(--transition);
+
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__content {
+  }
+
+  &__more {
+    margin-top: auto;
+    display: table;
+    width: fit-content;
+    transition: var(--transition);
+
+    &:hover {
+      transform: translateY(var(--hb-translateY));
+    }
+  }
+}
+
+.hb-bg-dark {
+}
+
+.hb-color-light {
+}
+
+.hb-container {
+}
+
+.hb-container1 {
+}
+
+.hb-cta {
+}
