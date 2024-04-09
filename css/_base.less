@@ -77,7 +77,6 @@ a {
 .hb-cta {
   display: table;
   padding: 10px 20px;
-  border: 1px solid var(--hb-color-dark);
   text-decoration: none;
   transition: var(--transition);
   border-radius: 8px;
@@ -89,7 +88,13 @@ a {
 
   &_colored {
     background-color: var(--hb-color1);
-    color: var(--hb-color-dark);
+    color: var(--hb-color-light);
+
+    &:hover {
+      background-color: var(--hb-color1-alter);
+      box-shadow: 0px 0px 15px rgba(#000, 0.25);
+      transform: translateY(var(--hb-translateY));
+    }
   }
 
 }

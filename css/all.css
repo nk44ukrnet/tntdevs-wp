@@ -216,6 +216,7 @@ template {
   --lh: 150%;
   --hb-font: "Montserrat", sans-serif;
   --transition: all 0.25s linear;
+  --hb-translateY: 2px;
 }
 html {
   scroll-behaviour: smooth;
@@ -279,7 +280,6 @@ a:visited:not([class]) {
 .hb-cta {
   display: table;
   padding: 10px 20px;
-  border: 1px solid var(--hb-color-dark);
   text-decoration: none;
   transition: var(--transition);
   border-radius: 8px;
@@ -290,10 +290,24 @@ a:visited:not([class]) {
 }
 .hb-cta_colored {
   background-color: var(--hb-color1);
-  color: var(--hb-color-dark);
+  color: var(--hb-color-light);
+}
+.hb-cta_colored:hover {
+  background-color: var(--hb-color1-alter);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+  transform: translateY(var(--hb-translateY));
 }
 .hb-pagination a {
   color: var(--hb-color1);
+}
+.hb-header {
+  padding-block: 15px;
+}
+.hb-header__holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 .hb-single-main {
   padding-block: 40px;
