@@ -66,5 +66,39 @@ get_header();
             </div>
         </div>
     </div>
+
+    <div class="hb-front-short-services">
+        <div class="hb-container">
+            <div class="hb-front-short-services__holder">
+                <div class="hb-front-short-services__item">
+                    <div class="hb-front-short-services__content">
+                        <h2 class="hb-front-short-services__heading">
+                            <span>We work with</span>
+                            <br>
+                            <strong>Existing WordPress Websites</strong>
+                        </h2>
+                        <p class="hb-front-short-services__description">
+                            If you already have your website, but you want to do some modifications to it - we can help
+                            you with it.
+                        </p>
+                    </div>
+                    <img class="hb-front-short-services__image" src="<?php echo get_template_directory_uri(); ?> /img/service1.png" alt="We work with Existing WordPress websites" loading="lazy">
+                </div>
+                <div class="hb-front-short-services__item">
+                    <div class="hb-front-short-services__content">
+                        <h2 class="hb-front-short-services__heading">
+                            <span>We can develop</span>
+                            <br>
+                            <strong>Brand New WordPress Website</strong>
+                        </h2>
+                        <p class="hb-front-short-services__description">
+                            Your personal WordPress website can be created from scratch as a custom WordPress theme based on your requirements.
+                        </p>
+                    </div>
+                    <img class="hb-front-short-services__image" src="<?php echo get_template_directory_uri(); ?> /img/service2.png" alt="Brand new WordPress theme" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
 <?php
 get_footer();

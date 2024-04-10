@@ -572,6 +572,15 @@ body.home .hb-header {
     padding-top: 70px;
   }
 }
+@media (min-width: 768px) {
+  .hb-front-hero__heading {
+    background: radial-gradient(circle, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+    display: table;
+    border-top: 2px solid var(--hb-color1);
+    border-bottom: 2px solid var(--hb-color1);
+    padding-block: 10px;
+  }
+}
 .hb-front-hero__heading span {
   font-size: 21px;
   color: var(--hb-color1-alter);
@@ -679,6 +688,95 @@ body.home .hb-header {
   width: 100%;
   max-width: 350px;
   display: table;
+}
+.hb-front-short-services {
+  width: 100%;
+  overflow: hidden;
+}
+.hb-front-short-services__holder {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 969px) {
+  .hb-front-short-services__holder {
+    flex-wrap: wrap;
+  }
+}
+.hb-front-short-services__item {
+  color: var(--hb-color-light);
+  padding: 25px;
+  box-sizing: border-box;
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 25px;
+  position: relative;
+}
+@media (max-width: 969px) {
+  .hb-front-short-services__item {
+    flex: 1 1 100%;
+  }
+}
+.hb-front-short-services__item:nth-child(1) {
+  padding-right: 0;
+  padding-left: 0;
+}
+.hb-front-short-services__item:nth-child(1)::before {
+  content: '';
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  background: linear-gradient(to right, #07414d 0%, #05313a 100%);
+  z-index: -1;
+}
+@media (max-width: 969px) {
+  .hb-front-short-services__item:nth-child(1)::before {
+    width: 200vw;
+    transform: translateX(50%);
+  }
+}
+.hb-front-short-services__item:nth-child(2) {
+  padding-right: 0;
+}
+.hb-front-short-services__item:nth-child(2)::before {
+  content: '';
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #144d5e 0%, #172c4b 100%);
+  z-index: -1;
+}
+@media (max-width: 969px) {
+  .hb-front-short-services__item:nth-child(2)::before {
+    width: 200vw;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 969px) {
+  .hb-front-short-services__item:nth-child(2) {
+    padding-left: 0;
+  }
+}
+.hb-front-short-services__heading span {
+  font-weight: normal;
+  font-size: 16px;
+}
+.hb-front-short-services__heading strong {
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: var(--hb-color2);
+}
+.hb-front-short-services__image {
+  display: table;
+  max-height: 150px;
+  object-fit: contain;
 }
 #__bs_notify__ {
   display: none !important;
