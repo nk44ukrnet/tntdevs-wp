@@ -1,0 +1,144 @@
+.hb-front-hero {
+  position: relative;
+
+  &__overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(../img/clouds1.png);
+    //background-position: top -200px left -400px;
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    //opacity: 0.85;
+    @media (max-width: @mobile) {
+      background-color: var(--hb-color-light);
+      opacity: 0.7;
+    }
+  }
+
+  .hb-container {
+    padding-top: 120px;
+    padding-bottom: 0px;
+    position: relative;
+    z-index: 2;
+
+    @media (max-width: @mobile) {
+      padding-top: 70px;
+    }
+  }
+
+  &__heading {
+
+    span {
+      font-size: 21px;
+      color: var(--hb-color1-alter);
+      @media (max-width: @mobile) {
+        font-size: 15px;
+      }
+    }
+
+    strong {
+      font-size: 80px;
+      letter-spacing: 5px;
+      background: -webkit-linear-gradient(#503d5d, #315c6d);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      @media (max-width: @mobile) {
+        letter-spacing: 1px;
+        font-size: 60px;
+      }
+    }
+
+    @media (max-width: @mobile) {
+    border-bottom: 5px solid var(--hb-color1);
+      padding-bottom: 25px;
+    }
+  }
+
+  &__service-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-block: 50px;
+    z-index: 2;
+    position: relative;
+
+    @media (max-width: @mobile) {
+      justify-content: center;
+      padding-block: 25px;
+    }
+  }
+
+  &__box {
+    font-size: 14px;
+    color: var(--hb-color2);
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //background-color: rgba(#000, 0.75);
+    background-color: hsla(187, 79%, 20%, 0.80);
+    //background-color: rgba(#315c6d, 0.80);
+    width: 100%;
+    max-width: 150px;
+
+    @media (max-width: @mobile) {
+      flex: 1 1 150px;
+      max-width: unset;
+    }
+  }
+
+  &__icon svg {
+    min-height: 40px;
+    min-width: 40px;
+    object-fit: contain;
+    display: table;
+    margin-inline: auto;
+    
+    @media (max-width: @mobile) {
+      min-height: 30px;
+      min-width: 30px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 0;
+    font-weight: bold;
+    color: var(--hb-color-light);
+  }
+
+  &__person-wrapper {
+    position: absolute;
+    bottom: 0;
+    right: 12px;
+    display: table;
+    margin-left: auto;
+
+    @media (max-width: @mobile) {
+      display: none;
+    }
+
+    &::before {
+      content: '';
+      width: 180px;
+      height: 115%;
+      position: absolute;
+      display: block;
+      bottom: 0;
+      right: -6px;
+      border-right: 5px solid var(--hb-color2);
+      border-top: 5px solid var(--hb-color2);
+      border-left: 5px solid var(--hb-color2);
+    }
+  }
+
+  &__person {
+    width: 100%;
+    max-width: 350px;
+    display: table;
+  }
+}
