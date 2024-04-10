@@ -2,7 +2,7 @@
 get_header();
 ?>
     <div class="hb-front-hero"
-         style="background-image: url(<?php echo get_template_directory_uri() ?>/img/hero.jpg); background-size: cover;">
+         style="background-image: url(<?php echo get_template_directory_uri() ?>/img/hero.webp); background-size: cover;">
         <div class="hb-front-hero__overlay"></div>
         <div class="hb-container">
             <h1 class="hb-front-hero__heading">
@@ -61,7 +61,7 @@ get_header();
                 </div>
             </div>
             <div class="hb-front-hero__person-wrapper">
-                <img class="hb-front-hero__person" src="<?php echo get_template_directory_uri() ?>/img/man.png"
+                <img class="hb-front-hero__person" src="<?php echo get_template_directory_uri() ?>/img/man.webp"
                      alt="man">
             </div>
         </div>
@@ -82,7 +82,7 @@ get_header();
                             you with it.
                         </p>
                     </div>
-                    <img class="hb-front-short-services__image" src="<?php echo get_template_directory_uri(); ?> /img/service1.png" alt="We work with Existing WordPress websites" loading="lazy">
+                    <img class="hb-front-short-services__image" src="<?php echo get_template_directory_uri(); ?>/img/service1.webp" alt="We work with Existing WordPress websites" loading="lazy">
                 </div>
                 <div class="hb-front-short-services__item">
                     <div class="hb-front-short-services__content">
@@ -95,7 +95,7 @@ get_header();
                             Your personal WordPress website can be created from scratch as a custom WordPress theme based on your requirements.
                         </p>
                     </div>
-                    <img class="hb-front-short-services__image" src="<?php echo get_template_directory_uri(); ?> /img/service2.png" alt="Brand new WordPress theme" loading="lazy">
+                    <img class="hb-front-short-services__image" src="<?php echo get_template_directory_uri(); ?>/img/service2.webp" alt="Brand new WordPress theme" loading="lazy">
                 </div>
             </div>
         </div>

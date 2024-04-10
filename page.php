@@ -1,1 +1,1 @@
-<?phpget_header();$blocks = get_field('blocks');if (!empty($blocks)) {    foreach ($blocks as $block) {        $block_template_file = __DIR__ . "/acf-blocks/" . $block['acf_fc_layout'] . ".php";        if (file_exists($block_template_file)) {            require($block_template_file);        }    }}?>    <div class="hb-container hb-the_content hb-bg-dark hb-color-light"><?php the_content(); ?></div><?phpget_footer();
+<?phpget_header();?>    <div class="hb-container hb-the_content"><?php the_content(); ?></div><?phpget_footer();
