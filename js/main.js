@@ -23,21 +23,4 @@ window.addEventListener('DOMContentLoaded', function () {
     } catch (e) {
         console.log(e);
     }
-
-    //home LCP preload
-    try {
-        let bodyHome = document.querySelector('body.home');
-        if (bodyHome) {
-            let hero = document.getElementById('hb-front-hero');
-            if (hero) {
-                const image = new Image();
-                image.src = tntdevsData.root_url + '/wp-content/themes/tntdevs/img/hero.webp';
-                image.onload = function () {
-                    hero.style.backgroundImage = `url('${this.src}')`;
-                };
-            }
-        }
-    } catch (e) {
-        console.log(e);
-    }
 })
