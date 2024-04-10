@@ -547,6 +547,8 @@ body.home .hb-header {
   position: relative;
   background-image: url(../img/hero.webp);
   background-size: cover;
+  width: 100%;
+  overflow: hidden;
 }
 @media (max-width: 768px) {
   .hb-front-hero {
@@ -562,11 +564,21 @@ body.home .hb-header {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (min-width: 768px) {
+  .hb-front-hero__overlay svg {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
   .hb-front-hero__overlay {
     background-color: var(--hb-color-light);
-    opacity: 0.7;
+    opacity: 0.3;
     background-image: none;
+  }
+  .hb-front-hero__overlay svg {
+    height: 100%;
+    display: block;
+    object-fit: cover;
   }
 }
 .hb-front-hero .hb-container {

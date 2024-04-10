@@ -2,6 +2,8 @@
   position: relative;
   background-image: url(../img/hero.webp);
   background-size: cover;
+  width: 100%;
+  overflow: hidden;
 
   @media (max-width: @mobile) {
     background-image: none;
@@ -17,10 +19,23 @@
     background-size: cover;
     background-repeat: no-repeat;
     //opacity: 0.85;
+
+    @media (min-width: @mobile) {
+      svg {
+        display: none;
+      }
+    }
     @media (max-width: @mobile) {
       background-color: var(--hb-color-light);
-      opacity: 0.7;
+      opacity: 0.3;
       background-image: none;
+
+      svg {
+        height: 100%;
+        //width: 100%;
+        display: block;
+        object-fit: cover;
+      }
     }
   }
 
