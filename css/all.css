@@ -545,6 +545,8 @@ body.home .hb-header {
 }
 .hb-front-hero {
   position: relative;
+  background-image: url(../img/hero.webp);
+  background-size: cover;
 }
 .hb-front-hero__overlay {
   width: 100%;

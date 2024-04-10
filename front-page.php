@@ -1,8 +1,7 @@
 <?php
 get_header();
 ?>
-    <div class="hb-front-hero"
-         style="background-image: url(<?php echo get_template_directory_uri() ?>/img/hero.webp); background-size: cover;">
+    <div class="hb-front-hero" id="hb-front-hero">
         <div class="hb-front-hero__overlay"></div>
         <div class="hb-container">
             <h1 class="hb-front-hero__heading">

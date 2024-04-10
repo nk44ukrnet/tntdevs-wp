@@ -13,7 +13,7 @@ function theme_files()
     wp_enqueue_style('main-styles');
 
 
-    wp_localize_script('main-tntdevs-js', 'tntdevsData', array(
+    wp_localize_script('main-js', 'tntdevsData', array(
         'root_url' => get_site_url(),
         'nonce' => wp_create_nonce('wp_rest')
     ));
