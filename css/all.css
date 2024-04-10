@@ -565,6 +565,9 @@ body.home .hb-header {
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
+  .hb-front-hero__overlay {
+    animation: hero-appear 0.7s linear;
+  }
   .hb-front-hero__overlay svg {
     display: none;
   }
@@ -797,6 +800,16 @@ body.home .hb-header {
   display: table;
   max-height: 150px;
   object-fit: contain;
+}
+@keyframes hero-appear {
+  0% {
+    opacity: 0.75;
+    transform: scale(1.03);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 #__bs_notify__ {
   display: none !important;
