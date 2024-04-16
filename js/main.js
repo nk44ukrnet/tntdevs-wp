@@ -23,4 +23,50 @@ window.addEventListener('DOMContentLoaded', function () {
     } catch (e) {
         console.log(e);
     }
+
+    //home swiper
+    try {
+
+        let homeSwiper = document.querySelector('.hb-testimonials-swiper');
+        if (homeSwiper) {
+            const swiper = new Swiper('.hb-testimonials-swiper', {
+                // Optional parameters
+                // direction: 'vertical',
+                loop: true,
+                clickable: true,
+                // slidesPerView: 3,
+                // spaceBetween: 30,
+
+                breakpoints: {
+                  320: {
+                      slidesPerView: 1.2,
+                      spaceBetween: 0,
+                  },
+                    768: {
+                        slidesPerView: 2.2,
+                        spaceBetween: 30,
+                    },
+                    1024: {
+                        slidesPerView: 3.3,
+                        spaceBetween: 30,
+                    }
+                },
+
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        }
+
+
+    } catch (e) {
+        console.log(e);
+    }
 })
