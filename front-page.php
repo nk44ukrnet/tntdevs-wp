@@ -2,9 +2,7 @@
 get_header();
 ?>
     <div class="hb-front-hero" id="hb-front-hero">
-        <div class="hb-front-hero__overlay">
-
-        </div>
+        <div class="hb-front-hero__overlay"></div>
         <div class="hb-container">
             <h1 class="hb-front-hero__heading">
                 <span>WordPress Development Services in</span>
@@ -250,7 +248,7 @@ get_header();
                     <p>We recommend:</p>
                     <h2>Fast and Reliable Hosting <br> services in <span class="hb-promo__colored">Ireland</span></h2>
 
-                    <a href="https://smarthost.ie/" class="hb-promo__link" target="_blank">
+                    <a aria-label="SmartHost.ie URL" href="https://smarthost.ie/" class="hb-promo__link" target="_blank">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                              viewBox="0 0 595.3 232.4" style="enable-background:new 0 0 595.3 232.4;"
