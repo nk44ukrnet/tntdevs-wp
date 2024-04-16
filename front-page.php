@@ -2318,5 +2318,31 @@ get_header();
         </div>
     </div>
 
+<div class="hb-promo">
+    <div class="hb-container">
+        <div class="hb-promo__holder">
+            <div class="hb-promo__left">
+                <p>We recommend:</p>
+                <h2>Fast and Reliable Hosting <br> services in <span class="hb-color2">Ireland</span></h2>
+                <a href="https://smarthost.ie/" class="hb-cta hb-cta_v2 hb-cta_hover_v1" target="_blank">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"></path>
+</svg>
+                        SmartHost.ie</span></a>
+            </div>
+            <div class="hb-promo__right">
+                <ul>
+                    <li>Lightning-fast Irish Web Hosting</li>
+                    <li>WordPress Hosting</li>
+                    <li>Expert friendly support</li>
+                    <li>Servers Located in Ireland</li>
+                </ul>
+            </div>
+            <img src="<?php echo get_template_directory_uri() ?>/img/boat1.webp" alt="Reliable Hosting Services smarthost.ie" loading="lazy" class="hb-promo__img">
+        </div>
+    </div>
+</div>
+
 <?php
 get_footer();

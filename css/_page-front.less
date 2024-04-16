@@ -321,6 +321,7 @@
     @media (max-width: @services-list-breakpoint) {
       grid-template-columns: 1fr;
       gap: 0;
+      margin-inline: -20px;
     }
   }
 
@@ -434,4 +435,127 @@
     }
   }
 }
+
+.hb-promo {
+  width: 100%;
+  overflow: hidden;
+
+  @media (min-width: @promo-breakpoint) {
+    padding-block: 50px;
+  }
+
+  &__holder {
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--hb-color-light);
+    position: relative;
+  }
+
+  &__left, &__right {
+    box-sizing: border-box;
+    flex: 0 1 50%;
+    padding: 25px;
+    position: relative;
+
+    @media (max-width: @promo-breakpoint) {
+      flex: 1 1 100%;
+      padding-inline: 0;
+
+      &::before {
+        left: 0;
+        right: unset;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  &__left {
+    &::before {
+      content: '';
+      width: 200vw;
+      height: 100%;
+      position: absolute;
+      display: block;
+      top: 0;
+      right: 0;
+      background-color: var(--hb-color1);
+      z-index: -1;
+    }
+  }
+
+  &__right {
+    //padding-left: 80px;
+    @media (min-width: @promo-breakpoint) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media (max-width: @promo-breakpoint) {
+      padding-right: 117px;
+    }
+
+    &::before {
+      content: '';
+      width: 200vw;
+      height: 100%;
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      background-color: var(--hb-color2);
+      z-index: -1;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      font-size: 20px;
+      //display: flex;
+      //align-items: center;
+
+      @media (max-width: @promo-breakpoint) {
+        list-style-position: inside;
+      }
+
+      li {
+        &::marker {
+          content: '\2713   ';
+        }
+      }
+    }
+
+
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: table;
+
+    @media (max-width: @promo-breakpoint) {
+      left: 100%;
+      transform: translateX(-100%);
+    }
+  }
+
+  .hb-cta {
+
+  }
+}
+
+.hb-container {
+}
+
+.hb-cta {
+
+  &_v2 {
+  }
+}
+
 
