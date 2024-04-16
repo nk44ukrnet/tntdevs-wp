@@ -88,3 +88,12 @@ function add_google_analytics() { ?>
     </script>
 <?php }
 add_action('wp_head', 'add_google_analytics', 10);
+
+function remove_block_library_style() {
+    // Check if we are not in the admin area
+    if ( ! is_admin() ) {
+        // Dequeue the block library style
+        wp_dequeue_style( 'wp-block-library' );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'remove_block_library_style' );
