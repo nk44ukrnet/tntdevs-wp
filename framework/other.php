@@ -76,21 +76,6 @@ function show_svg_in_media_library( $response ) {
 //    }
 //}
 
-//for ACF link
-function linkTargetAttr($link) {
-    if(!empty($link['target'])) {
-        return 'target="' . $link['target'] . '"';
-    }
-    return '';
-}
-
-//return HTML tag
-function returnHTMLTag($tag, $atts = '', $content = ''){
-    if(empty($tag)) return;
-    $output = "<$tag $atts>$content</$tag>";
-    return $output;
-}
-
 function add_google_analytics() { ?>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2XL0S6254"></script>
