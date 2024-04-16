@@ -90,3 +90,16 @@ function returnHTMLTag($tag, $atts = '', $content = ''){
     $output = "<$tag $atts>$content</$tag>";
     return $output;
 }
+
+function add_google_analytics() { ?>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2XL0S6254"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-Z2XL0S6254');
+    </script>
+<?php }
+add_action('wp_head', 'add_google_analytics', 10);
