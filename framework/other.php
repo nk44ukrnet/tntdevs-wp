@@ -132,3 +132,15 @@ function remove_block_library_style()
 }
 
 add_action('wp_enqueue_scripts', 'remove_block_library_style');
+
+// Disable CF7 assets on pages where CF7 shortcode isn't used
+function disable_cf7_assets() {
+    // Check if CF7 shortcode is not present on the page
+    if (!is_singular() || !has_shortcode(get_post()->post_content, 'contact-form-7')) {
+        // Dequeue CF7 styles
+        wp_dequeue_style('contact-form-7');
+        // Dequeue CF7 scripts
+        wp_dequeue_script('contact-form-7');
+    }
+}
+add_action('wp_enqueue_scripts', 'disable_cf7_assets', 100);
