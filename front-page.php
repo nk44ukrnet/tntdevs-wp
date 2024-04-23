@@ -4,7 +4,7 @@ get_header();
     <div class="hb-front-hero" id="hb-front-hero">
         <div class="hb-front-hero__overlay"></div>
         <div class="hb-container">
-            <h1 class="hb-front-hero__heading" style="font-family: sans-serif">
+            <h1 class="hb-front-hero__heading">
                 <span>WordPress Development Services in</span>
                 <br>
                 <strong>IRELAND</strong>
