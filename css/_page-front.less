@@ -210,13 +210,15 @@
 
     @media (max-width: @short-services-breakpoint) {
       flex: 1 1 100%;
-      background: linear-gradient(to right, #07414d 0%, #05313a 100%);
     }
 
     &:nth-child(1) {
       padding-right: 0;
       padding-left: 0;
-      background: linear-gradient(to right, #07414d 0%, #05313a 100%);
+
+      @media (max-width: @short-services-breakpoint) {
+        background: linear-gradient(to right, #07414d 0%, #05313a 100%);
+      }
 
       &::before {
         content: '';
@@ -239,7 +241,9 @@
 
     &:nth-child(2) {
       padding-right: 0;
-      background: linear-gradient(to right, #144d5e 0%, #172c4b 100%);
+      @media (max-width: @short-services-breakpoint) {
+        background: linear-gradient(to right, #144d5e 0%, #172c4b 100%);
+      }
 
       &::before {
         content: '';
