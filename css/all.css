@@ -1962,8 +1962,11 @@ body.home .hb-header {
 }
 @media (max-width: 768px) {
   .hb-specific-services__holder {
-    justify-content: center;
+    width: 100%;
+    overflow: scroll;
     gap: 15px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
   }
 }
 .hb-specific-services__item {
@@ -1973,6 +1976,11 @@ body.home .hb-header {
   top: 0;
   left: 0;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .hb-specific-services__item {
+    flex: 0 0 200px;
+  }
 }
 .hb-specific-services__overlay {
   width: 100%;
@@ -2008,6 +2016,11 @@ body.home .hb-header {
   height: 100%;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 768px) {
+  .hb-specific-services__inner {
+    padding: 10px;
+  }
 }
 .hb-specific-services__text {
   font-size: 14px;

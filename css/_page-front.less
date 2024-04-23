@@ -656,8 +656,12 @@
     gap: 25px;
 
     @media (max-width: @mobile) {
-      justify-content: center;
+      //justify-content: center;
+      width: 100%;
+      overflow: scroll;
       gap: 15px;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
     }
   }
 
@@ -668,6 +672,10 @@
     top: 0;
     left: 0;
     text-align: center;
+
+    @media (max-width: @mobile) {
+      flex: 0 0 200px;
+    }
   }
 
   &__overlay {
@@ -707,6 +715,9 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    @media (max-width: @mobile) {
+      padding: 10px;
+    }
   }
 
   &__content {
