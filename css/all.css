@@ -1656,6 +1656,11 @@ body.home .hb-header {
 .hb-services-list .hb-container {
   padding-block: 25px;
 }
+@media (max-width: 768px) {
+  .hb-services-list .hb-container {
+    padding-bottom: 0;
+  }
+}
 .hb-services-list__top {
   display: flex;
   flex-wrap: wrap;
