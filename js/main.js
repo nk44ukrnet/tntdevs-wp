@@ -70,4 +70,21 @@ window.addEventListener('DOMContentLoaded', function () {
     } catch (e) {
         console.log(e);
     }
+
+    //footer expand
+    try {
+        let footerHeading = document.querySelectorAll('.hb-footer__item h3')
+        if(footerHeading.length) {
+            footerHeading.forEach(item=>{
+                item.addEventListener('click', function (e){
+                    let current = e.target;
+                    if(current.closest('.hb-footer__item')) {
+                        current.closest('.hb-footer__item').classList.toggle('active');
+                    }
+                })
+            })
+        }
+    } catch (e) {
+        console.log(e);
+    }
 })

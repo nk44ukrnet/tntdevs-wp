@@ -1,0 +1,118 @@
+.hb-footer {
+  color: var(--hb-color-light);
+
+  &__top {
+    background-color: var(--hb-color1);
+    padding-block: 25px;
+  }
+
+  &__holder {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: space-between;
+
+    @media (max-width: @mobile) {
+      gap: 15px;
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+
+    p {
+      line-height: 150%;
+
+      @media (max-width: @mobile) {
+        br {
+          display: none;
+        }
+        font-size: 16px;
+        margin-bottom: 0;
+      }
+    }
+
+    @media (max-width: @mobile) {
+      &:not(.active) ul {
+        display: none
+      }
+    }
+
+    h3 {
+      position: relative;
+      @media (max-width: @mobile) {
+        margin: 0;
+        &::after {
+          content: '';
+          width: 7px;
+          height: 7px;
+          position: relative;
+          display: inline-block;
+          vertical-align: middle;
+          border-bottom: 2px solid var(--hb-color-light);
+          border-right: 2px solid var(--hb-color-light);
+          margin-left: 7px;
+          transform: rotate(45deg) translateY(-4px);
+        }
+      }
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-left: 0;
+      color: var(--hb-color-light);
+
+      li {
+
+        a {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 7px;
+          align-items: center;
+        }
+      }
+
+      li:not(:last-child) {
+        margin-bottom: 7px;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+
+        span {
+          color: inherit;
+        }
+
+        &:hover {
+          text-decoration: underline;
+
+          span {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      svg {
+        color: var(--hb-color2);
+      }
+    }
+  }
+
+  &__logo {
+  }
+
+  &__contact {
+  }
+
+  &__copy {
+    padding-block: 10px;
+    background-color: var(--hb-color1-alter);
+    font-size: 14px;
+
+    @media (max-width: @mobile) {
+      line-height: 150%;
+    }
+  }
+}
