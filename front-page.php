@@ -127,10 +127,10 @@ get_header();
                     <div class="hb-services-list__content">
                         <div class="hb-services-list__start">
                             <h3 class="hb-services-list__title">
-                                <span>Custom Theme</span>
-                                <strong>Development</strong>
+                                <span>Existing Theme</span>
+                                <strong>Modification</strong>
                             </h3>
-                            <p>We develop Custom WordPress themes based on your preferences</p>
+                            <p>We can made changes to your existing theme by adding custom page templates, styling, layout blocks or custom functionality</p>
                         </div>
                         <div class="hb-services-list__end">
                             <a href="mailto:admin@tntdevs.com" class="hb-cta hb-cta_v2">
@@ -155,7 +155,7 @@ get_header();
                         <div class="hb-services-list__end">
                             <h3 class="hb-services-list__title">
                                 <span>Theme CSS</span>
-                                <strong>Modification</strong>
+                                <strong>Styling Edits</strong>
                             </h3>
                         </div>
                     </div>
@@ -198,13 +198,22 @@ get_header();
                     <div class="hb-services-list__content">
                         <div class="hb-services-list__start">
                             <h3 class="hb-services-list__title">
-                                <span>Custom page templates and</span>
-                                <strong>AJAX data</strong>
+                                <span>Custom Theme</span>
+                                <strong>Development</strong>
                             </h3>
-                            <p>
-                                We are working with with custom page/posts template and data that can be fetched from
-                                WP-JSON of your theme.
-                            </p>
+                            <p>We develop Custom WordPress themes based on your preferences</p>
+                        </div>
+                        <div class="hb-services-list__end">
+                            <a href="mailto:admin@tntdevs.com" class="hb-cta hb-cta_v2">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd"
+        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"></path>
+</svg>
+                            Order Now
+                            </span>
+                            </a>
                         </div>
                     </div>
                 </div>
