@@ -87,7 +87,7 @@ function add_google_analytics() { ?>
         gtag('config', 'G-Z2XL0S6254');
     </script>
 <?php }
-add_action('wp_head', 'add_google_analytics', 10);
+add_action('wp_footer', 'add_google_analytics', 10);
 
 function remove_block_library_style() {
     // Check if we are not in the admin area
