@@ -80,7 +80,7 @@ function show_svg_in_media_library($response)
 function add_google_analytics()
 { ?>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2XL0S6254"></script>
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-Z2XL0S6254"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
