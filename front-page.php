@@ -1,8 +1,8 @@
 <?php
 get_header();
 ?>
-    <div class="hb-front-hero" id="hb-front-hero" style="background: none">
-<!--        <div class="hb-front-hero__overlay"></div>-->
+    <div class="hb-front-hero" id="hb-front-hero">
+        <div class="hb-front-hero__overlay"></div>
         <div class="hb-container">
             <h1 class="hb-front-hero__heading">
                 <span>WordPress Development Services in</span>
@@ -59,9 +59,9 @@ get_header();
                     </div>
                 </div>
             </div>
-            <!--<div class="hb-front-hero__person-wrapper">
-                <img class="hb-front-hero__person" src="<?php /*echo get_template_directory_uri() */?>/img/man.webp" alt="man">
-            </div>-->
+            <div class="hb-front-hero__person-wrapper">
+                <img class="hb-front-hero__person" src="<?php echo get_template_directory_uri(); ?>/img/man.webp" alt="man">
+            </div>
         </div>
     </div>
 
