@@ -1,8 +1,8 @@
 <?php
 get_header();
 ?>
-    <div class="hb-front-hero" id="hb-front-hero">
-        <div class="hb-front-hero__overlay"></div>
+    <div class="hb-front-hero" id="hb-front-hero" style="background: none">
+<!--        <div class="hb-front-hero__overlay"></div>-->
         <div class="hb-container">
             <h1 class="hb-front-hero__heading">
                 <span>WordPress Development Services in</span>
@@ -59,10 +59,9 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="hb-front-hero__person-wrapper">
-                <img class="hb-front-hero__person" src="<?php echo get_template_directory_uri() ?>/img/man.webp"
-                     alt="man">
-            </div>
+            <!--<div class="hb-front-hero__person-wrapper">
+                <img class="hb-front-hero__person" src="<?php /*echo get_template_directory_uri() */?>/img/man.webp" alt="man">
+            </div>-->
         </div>
     </div>
 
@@ -83,7 +82,7 @@ get_header();
                     </div>
                     <img class="hb-front-short-services__image"
                          src="<?php echo get_template_directory_uri(); ?>/img/service1.webp"
-                         alt="We work with Existing WordPress websites" loading="lazy">
+                         alt="We work with Existing WordPress websites" loading="lazy" decoding="async" width="114.26" height="149.99">
                 </div>
                 <div class="hb-front-short-services__item">
                     <div class="hb-front-short-services__content">
@@ -99,7 +98,7 @@ get_header();
                     </div>
                     <img class="hb-front-short-services__image"
                          src="<?php echo get_template_directory_uri(); ?>/img/service2.webp"
-                         alt="Brand new WordPress theme" loading="lazy">
+                         alt="Brand new WordPress theme" loading="lazy" decoding="async" width="144.43" height="149.99">
                 </div>
             </div>
         </div>
@@ -122,7 +121,7 @@ get_header();
                     <div class="hb-services-list__overlay">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/beach1.webp"
                              alt="Custom WordPress Theme Development"
-                             loading="lazy">
+                             loading="lazy" decoding="async">
                     </div>
                     <div class="hb-services-list__content">
                         <div class="hb-services-list__start">
@@ -150,7 +149,7 @@ get_header();
                 <div class="hb-services-list__item">
                     <div class="hb-services-list__overlay">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/beach2.webp"
-                             alt="Theme CSS Modifications" loading="lazy">
+                             alt="Theme CSS Modifications" loading="lazy" decoding="async">
                     </div>
                     <div class="hb-services-list__content">
                         <div class="hb-services-list__end">
@@ -164,7 +163,7 @@ get_header();
                 <div class="hb-services-list__item">
                     <div class="hb-services-list__overlay">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/beach3.webp"
-                             alt="Creating Custom HTML Blocks" loading="lazy">
+                             alt="Creating Custom HTML Blocks" loading="lazy" decoding="async">
                     </div>
                     <div class="hb-services-list__content">
                         <div class="hb-services-list__start">
@@ -179,7 +178,7 @@ get_header();
                 <div class="hb-services-list__item">
                     <div class="hb-services-list__overlay">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/beach4.webp"
-                             alt="Development of Shortcodes" loading="lazy">
+                             alt="Development of Shortcodes" loading="lazy" decoding="async">
                     </div>
                     <div class="hb-services-list__content">
                         <div class="hb-services-list__start">
@@ -194,7 +193,7 @@ get_header();
                 <div class="hb-services-list__item">
                     <div class="hb-services-list__overlay">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/beach5.webp"
-                             alt="Custom page templates and AJAX data" loading="lazy">
+                             alt="Custom page templates and AJAX data" loading="lazy" decoding="async">
                     </div>
                     <div class="hb-services-list__content">
                         <div class="hb-services-list__start">
@@ -221,7 +220,7 @@ get_header();
                 <div class="hb-services-list__item">
                     <div class="hb-services-list__overlay">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/beach6.webp"
-                             alt="Creating and connecting Options Pages" loading="lazy">
+                             alt="Creating and connecting Options Pages" loading="lazy" decoding="async">
                     </div>
                     <div class="hb-services-list__content">
                         <div class="hb-services-list__start">
@@ -236,7 +235,7 @@ get_header();
                 <div class="hb-services-list__item">
                     <div class="hb-services-list__overlay">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/beach7.webp"
-                             alt="ACF and Flexible Content Implementation" loading="lazy">
+                             alt="ACF and Flexible Content Implementation" loading="lazy" decoding="async">
                     </div>
                     <div class="hb-services-list__content">
                         <div class="hb-services-list__end">
@@ -326,7 +325,7 @@ get_header();
                     </ul>
                 </div>
                 <img src="<?php echo get_template_directory_uri() ?>/img/boat1.webp"
-                     alt="Reliable Hosting Services smarthost.ie" loading="lazy" class="hb-promo__img">
+                     alt="Reliable Hosting Services smarthost.ie" loading="lazy" class="hb-promo__img" decoding="async">
             </div>
         </div>
     </div>
@@ -540,7 +539,7 @@ get_header();
             <div class="hb-specific-services__holder">
                 <div class="hb-specific-services__item">
                     <div class="hb-specific-services__overlay">
-                        <img src="<?php echo get_template_directory_uri() ?>/img/service-map.webp" alt="Leaflet Map integration" loading="lazy" class="hb-specific-services__img">
+                        <img src="<?php echo get_template_directory_uri() ?>/img/service-map.webp" alt="Leaflet Map integration" loading="lazy" class="hb-specific-services__img" decoding="async">
                     </div>
                     <div class="hb-specific-services__inner">
                         <div class="hb-specific-services__content">
@@ -590,7 +589,7 @@ get_header();
                 </div>
                 <div class="hb-specific-services__item">
                     <div class="hb-specific-services__overlay">
-                        <img src="<?php echo get_template_directory_uri() ?>/img/service-quiz.webp" alt="Custom Quiz Development" loading="lazy" class="hb-specific-services__img">
+                        <img src="<?php echo get_template_directory_uri() ?>/img/service-quiz.webp" alt="Custom Quiz Development" loading="lazy" decoding="async" class="hb-specific-services__img">
                     </div>
                     <div class="hb-specific-services__inner">
                         <div class="hb-specific-services__content">
@@ -638,7 +637,7 @@ get_header();
                 </div>
                 <div class="hb-specific-services__item">
                     <div class="hb-specific-services__overlay">
-                        <img src="<?php echo get_template_directory_uri() ?>/img/service-speed.webp" alt="Google PageSpeed Consultation" loading="lazy" class="hb-specific-services__img">
+                        <img src="<?php echo get_template_directory_uri() ?>/img/service-speed.webp" alt="Google PageSpeed Consultation" loading="lazy" decoding="async" class="hb-specific-services__img">
                     </div>
                     <div class="hb-specific-services__inner">
                         <div class="hb-specific-services__content">
